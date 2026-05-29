@@ -6,3 +6,16 @@
 	키 Default값 160
 
 */
+
+var key = 160;
+
+function update(){
+	key++;
+	document.getElementById('leg').style.height = key + 'px';
+
+	if(key == 210){
+		key = 160;
+	}
+}
+
+setInterval(update, 100);
